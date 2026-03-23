@@ -69,7 +69,7 @@ public class Main {
         // stockage des fonctons dans des variables
         int provenanceFrance = nbInsectesByProvenance("France", liste_Insectes);
         ArrayList<boite> boitesAvecGrillons = boitesByInsecte("Grillon", l_boites);
-        ArrayList<boiteAssaisonnee> boitesAssaisonneeAuSel = boitesByAssaisonnement("paprika", l_boitesAssaisonnee);
+        ArrayList<boiteAssaisonnee> boitesAssaisonneeAuPaprika = boitesByAssaisonnement("Paprika", l_boitesAssaisonnee);
 
         // affichage d'un grillon
         System.out.println(grillon);
@@ -84,6 +84,8 @@ public class Main {
         // affichage du nb d'insecte provenant de France
         System.out.println("Le nombre d'insecte qui provient de France est : " + provenanceFrance);
         // affichage du nb de boîte contenant des grillons
-        System.out.println(("Le nombre de boîte d'insectes est de : " + boitesAvecGrillons.size()));
+        System.out.println("Le nombre de boîte d'insectes est de : " + boitesAvecGrillons.size());
+        // affichage du nb de boîte assaisonnée au paprika
+        System.out.println("Le nombre de boîte assaisonnée au paprika est de : " + boitesAssaisonneeAuPaprika.size());
     }
 }
